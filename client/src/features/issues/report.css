@@ -1,0 +1,56 @@
+.report-themed-select {
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 2.5rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M4 6l4 4 4-4' stroke='%2341431B' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
+  background-size: 14px;
+}
+
+.report-themed-select option {
+  background: #F8F3E1;
+  color: #41431B;
+}
+
+.report-themed-datepicker {
+  background: rgba(227, 219, 187, 0.35);
+  border: 1px solid rgba(65, 67, 27, 0.18);
+  color: #41431B;
+  cursor: pointer;
+}
+
+.report-native-datetime {
+  color-scheme: light;
+  cursor: pointer; /* Makes the whole field look clickable */
+}
+
+.report-native-datetime::-webkit-datetime-edit,
+.report-native-datetime::-webkit-datetime-edit-fields-wrapper,
+.report-native-datetime::-webkit-datetime-edit-hour-field,
+.report-native-datetime::-webkit-datetime-edit-minute-field,
+.report-native-datetime::-webkit-datetime-edit-day-field,
+.report-native-datetime::-webkit-datetime-edit-month-field,
+.report-native-datetime::-webkit-datetime-edit-year-field {
+  color: #41431B;
+}
+
+.report-native-datetime::-webkit-datetime-edit-text {
+  color: rgba(65, 67, 27, 0.56);
+}
+
+.report-native-datetime::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.78;
+  filter: invert(19%) sepia(24%) saturate(844%) hue-rotate(18deg) brightness(95%) contrast(91%);
+  /* Larger touch target, pushed away from the edge */
+  padding: 4px;
+  margin-left: 8px;
+}
+
+.report-native-datetime:hover::-webkit-calendar-picker-indicator,
+.report-native-datetime:focus::-webkit-calendar-picker-indicator {
+  opacity: 1;
+}

@@ -1,0 +1,12 @@
+# CivicChain is a Full-Stack Node.js app (MERN Stack).
+# Dependencies are managed within the 'package.json' files.
+# To install dependencies, run: npm install
+
+# This file is provided as requested, but standard Python tools will not install the stack here.
+
+
+
+
+
+[db] Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+ek bar database bhi jod ke dekh lo

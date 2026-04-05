@@ -1,0 +1,100 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -0.025em;
+  }
+
+  :root {
+    --bg-space: #F8F3E1;
+    --surface-soft: #E3DBBB;
+    --surface-strong: #AEB784;
+    --text-primary: #41431B;
+    --text-secondary: rgba(65, 67, 27, 0.72);
+    --text-tertiary: rgba(65, 67, 27, 0.52);
+    --text-muted: rgba(65, 67, 27, 0.68);
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-space text-white min-h-screen antialiased selection:bg-civic-blue selection:text-white m-0;
+    font-family: inherit;
+    background-image:
+      radial-gradient(circle at 8% 4%, rgba(174, 183, 132, 0.22), transparent 44%),
+      radial-gradient(circle at 88% 16%, rgba(227, 219, 187, 0.72), transparent 42%);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-glass-light backdrop-blur-glass border-t border-l border-white/20 shadow-glass rounded-glass relative overflow-hidden text-white;
+    box-shadow: 0 12px 30px -18px rgba(65, 67, 27, 0.4), inset 0 0 0 0.5px rgba(65, 67, 27, 0.16);
+  }
+
+  .glass-modal {
+    @apply bg-glass-medium backdrop-blur-heavy border-t border-white/20 rounded-t-[32px] overflow-hidden text-white;
+    box-shadow: 0 -12px 32px rgba(65, 67, 27, 0.2), inset 0 1px 0 rgba(65, 67, 27, 0.2);
+  }
+
+  .glass-button {
+    @apply relative overflow-hidden bg-glass-light hover:bg-glass-medium active:scale-95 transition-all duration-300 rounded-pill backdrop-blur-glass border border-white/10 flex items-center justify-center;
+  }
+
+  .glass-edge {
+    border: 0.5px solid transparent;
+    background: linear-gradient(var(--bg-space), var(--bg-space)) padding-box,
+                linear-gradient(135deg, rgba(65, 67, 27, 0.3) 0%, rgba(65, 67, 27, 0) 100%) border-box;
+  }
+
+  .glass-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60;
+  }
+
+  .display-title {
+    @apply text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight;
+  }
+}
+
+.pulse {
+  animation: pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.03); opacity: 0.9; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgba(65, 67, 27, 0.08) 0%, rgba(65, 67, 27, 0.15) 50%, rgba(65, 67, 27, 0.08) 100%);
+  background-size: 800px 100%;
+  animation: shimmer 2s infinite;
+}
+
+[class*="bg-black/"] {
+  background-color: rgba(65, 67, 27, 0.14) !important;
+}
+
+.leaflet-control-attribution {
+  display: none !important;
+}
+

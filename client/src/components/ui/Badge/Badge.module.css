@@ -1,0 +1,7 @@
+﻿.badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: 0.02em; }
+.blue { background: rgba(174,183,132,0.35); color: #41431B; }
+.green { background: rgba(174,183,132,0.45); color: #41431B; }
+.orange { background: rgba(227,219,187,0.85); color: #41431B; }
+.red { background: rgba(227,219,187,0.9); color: #41431B; }
+.purple { background: rgba(174,183,132,0.3); color: #41431B; }
+.gray { background: rgba(65,67,27,0.1); color: rgba(65,67,27,0.85); }

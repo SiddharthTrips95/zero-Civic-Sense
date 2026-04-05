@@ -1,0 +1,16 @@
+/*
+  detail.css — kept for backward compat but IssueDetail.tsx now handles
+  all styling inline. These variables are here as a fallback reference.
+*/
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Muted text helper — uses olive palette */
+.muted {
+  color: rgba(65, 67, 27, 0.5);
+  font-size: 11px;
+}

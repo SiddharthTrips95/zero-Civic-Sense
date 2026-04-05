@@ -1,0 +1,2 @@
+﻿.skel { background: linear-gradient(90deg, rgba(65,67,27,0.08) 0%, rgba(65,67,27,0.17) 50%, rgba(65,67,27,0.08) 100%); background-size: 800px 100%; animation: shimmer 1.8s infinite; }
+.rounded { border-radius: 999px; }
