@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const MONGODB_URI = process.env.MONGODB_URI ?? 'mongodb://localhost/civicchain';
+const MONGODB_URI = process.env.MONGODB_URI ?? 'mongodb://localhost:27017/civicchain';
 
 export const connectDb = async () => {
   try {
